@@ -14,7 +14,7 @@ import "./components.css";
 import "./animations.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://equityxxx.vercel.app/api";
 const USER_ID = "testuser";
 
 function App() {
@@ -514,7 +514,10 @@ function App() {
     const averageVolume =
       total > 0
         ? values.reduce(
-            (sum, stock) =>
+            (
+              sum,
+              stock
+            ) =>
               sum +
               Number(
                 stock.volume || 0
